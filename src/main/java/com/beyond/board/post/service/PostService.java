@@ -46,7 +46,7 @@ public class PostService {
 
 	// 	조회
 	public List<PostListResDto> postList() {
-		List<Post> postList = postRepository.findAll();
+		List<Post> postList = postRepository.findAllFetch();
 		List<PostListResDto> posts = new ArrayList<PostListResDto>();
 		for (Post post : postList) {
 			posts.add(post.listFromEntiy());

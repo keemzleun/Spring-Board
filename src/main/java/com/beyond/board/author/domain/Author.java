@@ -41,8 +41,8 @@ public class Author extends BaseTimeEntity {
 	private Role role;
 
 	// 일반적으로 부모엔티티(자식 객체에 영향을 끼칠 수 있는 엔티티)에 cascade 옵션을 설정
-	@OneToMany(mappedBy = "author", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	private List<Post> posts = new ArrayList<>();
+	@OneToMany(mappedBy = "author", cascade = CascadeType.ALL)
+	private List<Post> posts;
 
 	public void updateAuthor(AuthorUpdateDto dto) {
 		this.name = dto.getName();

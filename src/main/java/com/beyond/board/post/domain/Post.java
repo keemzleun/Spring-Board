@@ -2,13 +2,7 @@ package com.beyond.board.post.domain;
 
 import java.time.LocalDateTime;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 import com.beyond.board.common.BaseTimeEntity;
 import com.beyond.board.post.dto.PostUpdateDto;
@@ -39,7 +33,7 @@ public class Post extends BaseTimeEntity {
 	private String contents;
 
 	// 연관관계의 주인은 fk가 있는 post
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "author_id")
 	private Author author;
 
