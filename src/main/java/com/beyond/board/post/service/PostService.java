@@ -1,5 +1,7 @@
 package com.beyond.board.post.service;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,6 +9,8 @@ import javax.persistence.EntityNotFoundException;
 
 import com.beyond.board.post.dto.PostUpdateDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.beyond.board.author.domain.Author;
@@ -40,18 +44,44 @@ public class PostService {
 	public Post postCreate(PostSaveReqDto dto) {
 		// Author author = authorRepository.findByEmail(dto.getEmail())
 		// 	.orElseThrow(() -> new EntityNotFoundException("author not found"));
+
 		Author author = authorService.authorFindByEmail(dto.getEmail());
-		return postRepository.save(dto.toEntity(author));
+		String appointment = null;
+		LocalDateTime appointmentTime = null;
+
+		if (dto.getAppointment().equals("Y") && !dto.getAppointmentTime().isEmpty()){
+			DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm");
+			appointmentTime = LocalDateTime.parse(dto.getAppointmentTime(), dateTimeFormatter);
+			LocalDateTime now = LocalDateTime.now();
+			if(appointmentTime.isBefore(now)){
+				throw new IllegalArgumentException("시간 입력이 잘못되었습니다.");
+			}
+
+		}
+		System.out.println(dto);
+		Post post = postRepository.save(dto.toEntity(author, appointmentTime));
+		Post savedPost = postRepository.save(post);
+
+		return savedPost;
 	}
 
 	// 	조회
-	public List<PostListResDto> postList() {
-		List<Post> postList = postRepository.findAllFetch();
-		List<PostListResDto> posts = new ArrayList<PostListResDto>();
-		for (Post post : postList) {
-			posts.add(post.listFromEntiy());
-		}
-		return posts;
+	public Page<PostListResDto> postList(Pageable pageable) {
+//		List<Post> postList = postRepository.findAllFetch();
+//		List<PostListResDto> postListResDtos = new ArrayList<PostListResDto>();
+//		for (Post post : postList) {
+//			postListResDtos.add(post.listFromEntiy());
+//		}
+//		Page<Post> posts = postRepository.findAll(pageable);
+		Page<Post> posts = postRepository.findByAppointment(pageable, "N");
+		Page<PostListResDto> postListResDtos = posts.map(a->a.listFromEntiy());
+		return postListResDtos;
+	}
+
+	public Page<PostListResDto> postListPage(Pageable pageable){
+		Page<Post> posts = postRepository.findAll(pageable);
+		Page<PostListResDto> postListResDtos = posts.map(a->a.listFromEntiy());
+		return postListResDtos;
 	}
 
 	// 상세 조회

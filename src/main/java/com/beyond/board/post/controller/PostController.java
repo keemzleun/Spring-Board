@@ -4,6 +4,10 @@ import java.util.List;
 
 import com.beyond.board.post.dto.PostUpdateDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -36,9 +40,17 @@ public class PostController {
 
 	// 	조회
 	@GetMapping("/post/list")
-	public String postList(Model model) {
-		model.addAttribute("postList", postService.postList());
+	public String postList(Model model, @PageableDefault(size=10, sort="createdTime", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("postList", postService.postList(pageable));
 		return "post/post_list";
+	}
+
+	@GetMapping("post/list/page")
+	@ResponseBody
+	// Pageable 요청 방법: Localhost:/8080/post/list/page?size=10&page=0  -> 데이터 바인딩
+	public Page<PostListResDto> postListPage(@PageableDefault(size=10, sort="createdTime", direction = Sort.Direction.DESC) Pageable pageable){
+		return postService.postListPage(pageable);
+
 	}
 
 	@GetMapping("/post/detail/{id}")

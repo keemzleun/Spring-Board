@@ -21,8 +21,8 @@ import lombok.NoArgsConstructor;
 @Getter
 @Entity
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class Post extends BaseTimeEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,10 +32,14 @@ public class Post extends BaseTimeEntity {
 	@Column(length = 30000)
 	private String contents;
 
-	// 연관관계의 주인은 fk가 있는 post
+	// 연관관계의 주인은 fk가 있는 post - 보통 Many 쪽이 연관관계의 주인이라고 들음
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "author_id")
 	private Author author;
+
+	private String appointment;
+	private LocalDateTime appointmentTime;
+
 
 
 	public PostListResDto listFromEntiy(){
