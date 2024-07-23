@@ -74,13 +74,13 @@ public class PostService {
 //		}
 //		Page<Post> posts = postRepository.findAll(pageable);
 		Page<Post> posts = postRepository.findByAppointment(pageable, "N");
-		Page<PostListResDto> postListResDtos = posts.map(a->a.listFromEntiy());
+		Page<PostListResDto> postListResDtos = posts.map(a->a.listFromEntity());
 		return postListResDtos;
 	}
 
 	public Page<PostListResDto> postListPage(Pageable pageable){
 		Page<Post> posts = postRepository.findAll(pageable);
-		Page<PostListResDto> postListResDtos = posts.map(a->a.listFromEntiy());
+		Page<PostListResDto> postListResDtos = posts.map(a->a.listFromEntity());
 		return postListResDtos;
 	}
 

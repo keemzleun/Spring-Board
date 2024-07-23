@@ -42,7 +42,7 @@ public class Post extends BaseTimeEntity {
 
 
 
-	public PostListResDto listFromEntiy(){
+	public PostListResDto listFromEntity(){
 		return PostListResDto.builder()
 			.id(this.id)
 			.title(this.getTitle())
@@ -60,6 +60,10 @@ public class Post extends BaseTimeEntity {
 			.createdTime(this.getCreatedTime())
 			.updatedTime(this.getUpdatedTime())
 			.build();
+	}
+
+	public void updateAppointment(String yn){
+		this.appointment = yn;
 	}
 
 	public void updatePost(PostUpdateDto dto){
