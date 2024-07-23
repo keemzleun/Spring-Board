@@ -178,3 +178,80 @@ javax.persistence.EntityNotFoundException: member is not found
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:829)
+13:09 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m30s716ms).
+13:11 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m37s960ms).
+13:25 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m8s452ms).
+13:37 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m47s103ms).
+13:40 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m29s110ms).
+13:41 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s78ms).
+13:48 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m7s664ms).
+13:50 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m49s820ms).
+13:56 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m14s589ms).
+14:08 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+14:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+14:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+14:08 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 20367 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+14:08 com.beyond.board.BoardApplication-The following 1 profile is active: "prod"
+14:08 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:08 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+14:08 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+14:08 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+14:08 o.a.catalina.core.StandardService-Starting service [Tomcat]
+14:08 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+14:08 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+14:08 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 453 ms
+14:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+14:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+14:08 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+14:08 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+14:08 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:08 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+14:08 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:08 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:08 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:08 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+14:08 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+14:08 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+14:08 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+14:08 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+14:08 com.beyond.board.BoardApplication-Started BoardApplication in 1.344 seconds (JVM running for 1.595)
+14:08 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+14:43 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+14:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+14:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+14:43 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 37260 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+14:43 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+14:43 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:43 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+14:43 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+14:43 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+14:43 o.a.catalina.core.StandardService-Starting service [Tomcat]
+14:43 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+14:43 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+14:43 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 444 ms
+14:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+14:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+14:43 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+14:43 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+14:43 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:43 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+14:43 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:43 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:43 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:43 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+14:43 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+14:43 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+14:43 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+14:43 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+14:43 com.beyond.board.BoardApplication-Started BoardApplication in 1.365 seconds (JVM running for 1.599)
+14:43 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+14:43 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:43 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+14:43 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+14:44 c.b.b.a.controller.AuthorController-get 요청 & parameter = 9
+14:44 c.b.b.a.controller.AuthorController-method명 : authorDetail
+14:44 c.b.b.post.controller.PostController-get 요청 & parameter = 37
+14:44 c.b.b.post.controller.PostController-method명 : postList
+14:45 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+14:45 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+14:45 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.

@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.beyond.board.author.domain.Author;
 import com.beyond.board.author.dto.AuthorUpdateDto;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +16,7 @@ import com.beyond.board.author.dto.AuthorListResDto;
 import com.beyond.board.author.service.AuthorService;
 
 @Controller
+@Slf4j
 public class AuthorController {
 
 	private final AuthorService authorService;
@@ -48,14 +50,19 @@ public class AuthorController {
 	// 	상세조회
 	@GetMapping("/author/detail/{id}")
 	public String authorDetail(@PathVariable Long id, Model model) {
-		try {
-			AuthorDetResDto dto = authorService.authorDetail(id);
-			model.addAttribute("author", dto);
-		} catch (IllegalArgumentException e){
-//			e.printStackTrace();
-//			log.error(id + e.getMessage());	이런식으로 에러 캐치. @Slf4j 추가해줘야함
-		}
-		//		return authorService.authorDetail(id);
+//		try {
+//			AuthorDetResDto dto = authorService.authorDetail(id);
+//			model.addAttribute("author", dto);
+//		} catch (IllegalArgumentException e){
+////			e.printStackTrace();
+////			log.error(id + e.getMessage());	이런식으로 에러 캐치. @Slf4j 추가해줘야함
+//		}
+//		//		return authorService.authorDetail(id);
+
+		log.info("get 요청 & parameter = " + id);
+		log.info("method명 : authorDetail");
+		AuthorDetResDto dto = authorService.authorDetail(id);
+		model.addAttribute("author", dto);
 
 		return "author/author_detail";
 	}
