@@ -48,9 +48,15 @@ public class AuthorController {
 	// 	상세조회
 	@GetMapping("/author/detail/{id}")
 	public String authorDetail(@PathVariable Long id, Model model) {
+		try {
+			AuthorDetResDto dto = authorService.authorDetail(id);
+			model.addAttribute("author", dto);
+		} catch (IllegalArgumentException e){
+//			e.printStackTrace();
+//			log.error(id + e.getMessage());	이런식으로 에러 캐치. @Slf4j 추가해줘야함
+		}
 		//		return authorService.authorDetail(id);
-		AuthorDetResDto dto = authorService.authorDetail(id);
-		model.addAttribute("author", dto);
+
 		return "author/author_detail";
 	}
 
