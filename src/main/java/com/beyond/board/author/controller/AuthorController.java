@@ -59,8 +59,8 @@ public class AuthorController {
 //		}
 //		//		return authorService.authorDetail(id);
 
-		log.info("get 요청 & parameter = " + id);
-		log.info("method명 : authorDetail");
+//		log.info("get 요청 & parameter = " + id);
+//		log.info("method명 : authorDetail");
 		AuthorDetResDto dto = authorService.authorDetail(id);
 		model.addAttribute("author", dto);
 
