@@ -26,6 +26,13 @@ public class AuthorController {
 		this.authorService = authorService;
 	}
 
+	// 로그인
+	@GetMapping("author/login-screen")
+	public String authorLoginScreen(){
+		return "author/login-screen";
+	}
+
+
 	// 	생성
 	@GetMapping("author/register")
 	public String createAuthor(){

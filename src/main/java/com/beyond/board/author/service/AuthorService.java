@@ -8,6 +8,7 @@ import javax.persistence.EntityNotFoundException;
 import com.beyond.board.author.dto.AuthorUpdateDto;
 import com.beyond.board.post.domain.Post;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,12 +23,16 @@ import com.beyond.board.author.repository.AuthorRepository;
 // 다만, 저장 작업시에는 Transactional 필요
 @Transactional(readOnly = true)
 public class AuthorService {
+
 	private final AuthorRepository authorRepository;
+	private final PasswordEncoder passwordEncoder;
 
 	@Autowired
-	AuthorService(AuthorRepository authorRepository) {
-		this.authorRepository = authorRepository;
+	AuthorService(PasswordEncoder passwordEncoder, AuthorRepository authorRepository) {
+        this.passwordEncoder = passwordEncoder;
+        this.authorRepository = authorRepository;
 	}
+
 
 	// 생성
 	@Transactional
@@ -38,7 +43,8 @@ public class AuthorService {
 		if(dto.getPassword().length() < 8){
 			throw new IllegalArgumentException("비밀번호가 너무 짧아욘");
 		}
-		Author author = dto.toEntity();
+
+		Author author = dto.toEntity(passwordEncoder.encode(dto.getPassword()));
 		// cascade persist 테스트. remove 테스트는 회원 삭제로 대체
 		author.getPosts().add(Post.builder().title("가입인사").author(author).contents("안녕하세요" + dto.getName()+"입니다.").build());
 		Author savedAuthor = authorRepository.save(author);

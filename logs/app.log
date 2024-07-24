@@ -1,484 +1,500 @@
-2024-07-23 12:06:40.340  INFO 87977 --- [main] com.beyond.board.BoardApplication        : Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 87977 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
-2024-07-23 12:06:40.341  INFO 87977 --- [main] com.beyond.board.BoardApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-07-23 12:06:40.558  INFO 87977 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-07-23 12:06:40.577  INFO 87977 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
-2024-07-23 12:06:40.740  INFO 87977 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-07-23 12:06:40.743  INFO 87977 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-07-23 12:06:40.743  INFO 87977 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
-2024-07-23 12:06:40.778  INFO 87977 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-07-23 12:06:40.778  INFO 87977 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 422 ms
-2024-07-23 12:06:40.813  INFO 87977 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-07-23 12:06:40.845  INFO 87977 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-07-23 12:06:40.879  INFO 87977 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-07-23 12:06:40.892  INFO 87977 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
-2024-07-23 12:06:40.929  INFO 87977 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-07-23 12:06:40.958  INFO 87977 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-2024-07-23 12:06:41.143  INFO 87977 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-07-23 12:06:41.146  INFO 87977 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-07-23 12:06:41.314  WARN 87977 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-07-23 12:06:41.421  WARN 87977 --- [main] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
-2024-07-23 12:06:41.423  INFO 87977 --- [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: MYSQL
-2024-07-23 12:06:41.428  INFO 87977 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
-2024-07-23 12:06:41.463  INFO 87977 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-07-23 12:06:41.487  INFO 87977 --- [main] com.beyond.board.BoardApplication        : Started BoardApplication in 1.292 seconds (JVM running for 1.526)
-2024-07-23 12:06:41.488  INFO 87977 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
-2024-07-23 12:07:17.994  INFO 87977 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-07-23 12:07:17.997  INFO 87977 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-07-23 12:07:18.003  INFO 87977 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-07-23 12:07:19.068  INFO 88367 --- [main] com.beyond.board.BoardApplication        : Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 88367 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
-2024-07-23 12:07:19.069  INFO 88367 --- [main] com.beyond.board.BoardApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-07-23 12:07:19.296  INFO 88367 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-07-23 12:07:19.318  INFO 88367 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
-2024-07-23 12:07:19.495  INFO 88367 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-07-23 12:07:19.498  INFO 88367 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-07-23 12:07:19.498  INFO 88367 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
-2024-07-23 12:07:19.535  INFO 88367 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-07-23 12:07:19.535  INFO 88367 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 451 ms
-2024-07-23 12:07:19.570  INFO 88367 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-07-23 12:07:19.593  INFO 88367 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-07-23 12:07:19.630  INFO 88367 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-07-23 12:07:19.645  INFO 88367 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
-2024-07-23 12:07:19.684  INFO 88367 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-07-23 12:07:19.712  INFO 88367 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-2024-07-23 12:07:19.917  INFO 88367 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-07-23 12:07:19.920  INFO 88367 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-07-23 12:07:20.088  WARN 88367 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-07-23 12:07:20.188  WARN 88367 --- [main] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
-2024-07-23 12:07:20.190  INFO 88367 --- [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: MYSQL
-2024-07-23 12:07:20.194  INFO 88367 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
-2024-07-23 12:07:20.228  INFO 88367 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-07-23 12:07:20.234  INFO 88367 --- [main] com.beyond.board.BoardApplication        : Started BoardApplication in 1.316 seconds (JVM running for 1.535)
-2024-07-23 12:07:20.235  INFO 88367 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
-2024-07-23 12:29:45.421  INFO 88367 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-07-23 12:29:45.426  INFO 88367 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-07-23 12:29:45.435  INFO 88367 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-12:38 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 3536 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
-12:38 com.beyond.board.BoardApplication-No active profile set, falling back to 1 default profile: "default"
-12:38 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-12:38 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
-12:38 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
-12:38 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
-12:38 o.a.catalina.core.StandardService-Starting service [Tomcat]
-12:38 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
-12:38 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-12:38 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 447 ms
-12:38 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
-12:38 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
-12:38 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-12:38 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
-12:38 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-12:38 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-12:38 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-12:38 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-12:38 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-12:38 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
-12:38 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
-12:38 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
-12:38 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
-12:38 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
-12:38 com.beyond.board.BoardApplication-Started BoardApplication in 1.413 seconds (JVM running for 1.664)
-12:38 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
-12:38 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
-12:38 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
-12:38 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
-12:38 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 3724 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
-12:38 com.beyond.board.BoardApplication-No active profile set, falling back to 1 default profile: "default"
-12:38 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-12:38 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
-12:38 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
-12:38 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
-12:38 o.a.catalina.core.StandardService-Starting service [Tomcat]
-12:38 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
-12:38 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-12:38 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 467 ms
-12:38 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
-12:38 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
-12:38 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-12:38 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
-12:38 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-12:38 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-12:38 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-12:38 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-12:38 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-12:38 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
-12:38 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
-12:38 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
-12:38 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
-12:38 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
-12:38 com.beyond.board.BoardApplication-Started BoardApplication in 1.376 seconds (JVM running for 1.602)
-12:38 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
-12:38 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
-12:38 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
-12:38 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
-12:38 o.a.c.c.C.[.[.[.[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.persistence.EntityNotFoundException: member is not found] with root cause
-javax.persistence.EntityNotFoundException: member is not found
-	at com.beyond.board.author.service.AuthorService.lambda$authorDetail$0(AuthorService.java:62)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:408)
-	at com.beyond.board.author.service.AuthorService.authorDetail(AuthorService.java:62)
-	at com.beyond.board.author.service.AuthorService$$FastClassBySpringCGLIB$$cc00b908.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at com.beyond.board.author.service.AuthorService$$EnhancerBySpringCGLIB$$3f606710.authorDetail(<generated>)
-	at com.beyond.board.author.controller.AuthorController.authorDetail(AuthorController.java:52)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-13:09 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m30s716ms).
-13:11 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m37s960ms).
-13:25 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m8s452ms).
-13:37 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m47s103ms).
-13:40 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m29s110ms).
-13:41 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s78ms).
-13:48 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m7s664ms).
-13:50 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m49s820ms).
-13:56 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m14s589ms).
-14:08 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
-14:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
-14:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
-14:08 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 20367 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
-14:08 com.beyond.board.BoardApplication-The following 1 profile is active: "prod"
-14:08 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-14:08 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
-14:08 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
-14:08 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
-14:08 o.a.catalina.core.StandardService-Starting service [Tomcat]
-14:08 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
-14:08 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-14:08 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 453 ms
-14:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
-14:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
-14:08 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-14:08 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
-14:08 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-14:08 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-14:08 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-14:08 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-14:08 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-14:08 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
-14:08 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
-14:08 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
-14:08 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
-14:08 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
-14:08 com.beyond.board.BoardApplication-Started BoardApplication in 1.344 seconds (JVM running for 1.595)
-14:08 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
-14:43 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
-14:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
-14:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
-14:43 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 37260 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
-14:43 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
-14:43 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-14:43 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
-14:43 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
-14:43 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
-14:43 o.a.catalina.core.StandardService-Starting service [Tomcat]
-14:43 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
-14:43 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-14:43 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 444 ms
-14:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
-14:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
-14:43 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-14:43 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
-14:43 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-14:43 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-14:43 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-14:43 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-14:43 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-14:43 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
-14:43 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
-14:43 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
-14:43 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
-14:43 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
-14:43 com.beyond.board.BoardApplication-Started BoardApplication in 1.365 seconds (JVM running for 1.599)
-14:43 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
-14:43 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
-14:43 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
-14:43 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
-14:44 c.b.b.a.controller.AuthorController-get 요청 & parameter = 9
-14:44 c.b.b.a.controller.AuthorController-method명 : authorDetail
-14:44 c.b.b.post.controller.PostController-get 요청 & parameter = 37
-14:44 c.b.b.post.controller.PostController-method명 : postList
-14:45 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
-14:45 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
-14:45 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
-15:13 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 51779 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
-15:13 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
-15:13 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-15:13 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
-15:13 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
-15:13 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
-15:13 o.a.catalina.core.StandardService-Starting service [Tomcat]
-15:13 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
-15:13 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-15:13 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 501 ms
-15:13 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
-15:13 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
-15:13 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-15:13 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
-15:13 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-15:13 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-15:13 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-15:13 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-15:13 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-15:13 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
-15:13 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
-15:13 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
-15:13 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
-15:13 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
-15:13 com.beyond.board.BoardApplication-Started BoardApplication in 1.541 seconds (JVM running for 1.772)
-15:13 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
-15:43 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
-15:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
-15:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
-15:43 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 65904 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
-15:43 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
-15:43 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-15:43 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
-15:43 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
-15:43 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
-15:43 o.a.catalina.core.StandardService-Starting service [Tomcat]
-15:43 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
-15:43 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-15:43 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 495 ms
-15:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
-15:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
-15:43 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-15:43 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
-15:43 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-15:43 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-15:43 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-15:43 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-15:43 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-15:43 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
-15:43 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
-15:43 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
-15:43 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
-15:43 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
-15:43 com.beyond.board.BoardApplication-Started BoardApplication in 1.556 seconds (JVM running for 1.778)
-15:43 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
-15:44 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
-15:44 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
-15:44 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
-15:44 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 66730 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
-15:44 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
-15:44 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-15:44 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
-15:44 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
-15:44 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
-15:44 o.a.catalina.core.StandardService-Starting service [Tomcat]
-15:44 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
-15:44 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-15:44 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 496 ms
-15:44 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
-15:44 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
-15:44 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-15:44 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
-15:44 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-15:44 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-15:44 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-15:44 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-15:44 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-15:44 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
-15:44 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
-15:44 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
-15:44 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
-15:44 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
-15:44 com.beyond.board.BoardApplication-Started BoardApplication in 1.565 seconds (JVM running for 1.79)
-15:44 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
-15:44 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
-15:44 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
-15:44 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
-15:44 c.beyond.board.common.AopLogService-aop start
-15:44 c.beyond.board.common.AopLogService-Method명 :home
-15:44 c.beyond.board.common.AopLogService-HTTP 메서드GET
-15:44 c.beyond.board.common.AopLogService-user input: {}
-15:44 c.beyond.board.common.AopLogService-aop start
-15:44 c.beyond.board.common.AopLogService-Method명 :home
-15:44 c.beyond.board.common.AopLogService-HTTP 메서드GET
-15:44 c.beyond.board.common.AopLogService-aop end
-15:44 c.beyond.board.common.AopLogService-aop end
-15:44 c.beyond.board.common.AopLogService-aop start
-15:44 c.beyond.board.common.AopLogService-Method명 :authorList
-15:44 c.beyond.board.common.AopLogService-HTTP 메서드GET
-15:44 c.beyond.board.common.AopLogService-user input: {}
-15:44 c.beyond.board.common.AopLogService-aop start
-15:44 c.beyond.board.common.AopLogService-Method명 :authorList
-15:44 c.beyond.board.common.AopLogService-HTTP 메서드GET
-15:44 c.beyond.board.common.AopLogService-aop end
-15:44 c.beyond.board.common.AopLogService-aop end
-15:44 c.beyond.board.common.AopLogService-aop start
-15:44 c.beyond.board.common.AopLogService-Method명 :authorDetail
-15:44 c.beyond.board.common.AopLogService-HTTP 메서드GET
-15:44 c.beyond.board.common.AopLogService-user input: {}
-15:44 c.beyond.board.common.AopLogService-aop start
-15:44 c.beyond.board.common.AopLogService-Method명 :authorDetail
-15:44 c.beyond.board.common.AopLogService-HTTP 메서드GET
-15:44 c.beyond.board.common.AopLogService-aop end
-15:44 c.beyond.board.common.AopLogService-aop end
-15:45 c.beyond.board.common.AopLogService-aop start
-15:45 c.beyond.board.common.AopLogService-Method명 :createAuthor
-15:45 c.beyond.board.common.AopLogService-HTTP 메서드GET
-15:45 c.beyond.board.common.AopLogService-user input: {}
-15:45 c.beyond.board.common.AopLogService-aop start
-15:45 c.beyond.board.common.AopLogService-Method명 :createAuthor
-15:45 c.beyond.board.common.AopLogService-HTTP 메서드GET
-15:45 c.beyond.board.common.AopLogService-aop end
-15:45 c.beyond.board.common.AopLogService-aop end
-15:45 c.beyond.board.common.AopLogService-aop start
-15:45 c.beyond.board.common.AopLogService-Method명 :createAuthor
-15:45 c.beyond.board.common.AopLogService-HTTP 메서드POST
-15:45 c.beyond.board.common.AopLogService-user input: {"name":["홍길동"],"email":["gildong@naver.com"],"password":["12341234"],"role":["USER"]}
-15:45 c.beyond.board.common.AopLogService-aop start
-15:45 c.beyond.board.common.AopLogService-Method명 :createAuthor
-15:45 c.beyond.board.common.AopLogService-HTTP 메서드POST
-15:45 c.beyond.board.common.AopLogService-aop end
-15:45 c.beyond.board.common.AopLogService-aop end
-15:45 c.beyond.board.common.AopLogService-aop start
-15:45 c.beyond.board.common.AopLogService-Method명 :home
-15:45 c.beyond.board.common.AopLogService-HTTP 메서드GET
-15:45 c.beyond.board.common.AopLogService-user input: {}
-15:45 c.beyond.board.common.AopLogService-aop start
-15:45 c.beyond.board.common.AopLogService-Method명 :home
-15:45 c.beyond.board.common.AopLogService-HTTP 메서드GET
-15:45 c.beyond.board.common.AopLogService-aop end
-15:45 c.beyond.board.common.AopLogService-aop end
-16:04 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
-16:04 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
-16:04 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
-17:05 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 6029 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
-17:05 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
-17:05 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-17:05 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
-17:05 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
-17:05 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
-17:05 o.a.catalina.core.StandardService-Starting service [Tomcat]
-17:05 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
-17:05 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-17:05 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 525 ms
-17:05 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
-17:05 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
-17:05 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-17:05 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
-17:05 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-17:05 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-17:05 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-17:05 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-17:05 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-17:05 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
-17:05 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
-17:05 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
-17:05 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
-17:05 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
-17:05 com.beyond.board.BoardApplication-Started BoardApplication in 1.617 seconds (JVM running for 1.852)
-17:05 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
-17:05 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
-17:05 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
-17:05 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
-17:05 c.beyond.board.common.AopLogService-aop start
-17:05 c.beyond.board.common.AopLogService-Method명 :home
-17:05 c.beyond.board.common.AopLogService-HTTP 메서드GET
-17:05 c.beyond.board.common.AopLogService-aop end
-17:05 c.beyond.board.common.AopLogService-aop start
-17:05 c.beyond.board.common.AopLogService-Method명 :home
-17:05 c.beyond.board.common.AopLogService-HTTP 메서드GET
-17:05 c.beyond.board.common.AopLogService-aop end
-17:14 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
-17:14 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
-17:14 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
-17:14 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 10671 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
-17:14 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
-17:15 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-17:15 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
-17:15 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
-17:15 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
-17:15 o.a.catalina.core.StandardService-Starting service [Tomcat]
-17:15 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
-17:15 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-17:15 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 558 ms
-17:15 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
-17:15 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
-17:15 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-17:15 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
-17:15 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-17:15 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-17:15 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-17:15 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-17:15 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-17:15 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
-17:15 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
-17:15 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
-17:15 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+09:23 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 46238 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+09:23 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+09:23 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:23 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+09:23 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+09:23 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+09:23 o.a.catalina.core.StandardService-Starting service [Tomcat]
+09:23 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+09:23 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+09:23 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 617 ms
+09:23 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+09:23 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+09:23 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+09:23 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+09:23 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:23 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+09:23 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:23 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:23 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
 
-Using generated security password: bba019e5-c893-43bf-8347-8f30eee74361
+Using generated security password: 8cd61fad-2dac-427b-82cf-1f991d73d5fe
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-17:15 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@85fd4b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6715a6da, org.springframework.security.web.context.SecurityContextPersistenceFilter@376bae20, org.springframework.security.web.header.HeaderWriterFilter@7af2ee23, org.springframework.security.web.csrf.CsrfFilter@2330c995, org.springframework.security.web.authentication.logout.LogoutFilter@19b33b0d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@21a462ce, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1188e08b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1eb207c3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@514c6ca0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40f77135, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7866ffa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29f86630, org.springframework.security.web.session.SessionManagementFilter@4fb42efa, org.springframework.security.web.access.ExceptionTranslationFilter@3dfaa1e4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@158cb50a]
-17:15 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
-17:15 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
-17:15 com.beyond.board.BoardApplication-Started BoardApplication in 1.72 seconds (JVM running for 2.004)
-17:15 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
-17:15 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
-17:15 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
-17:15 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
-17:15 c.beyond.board.common.AopLogService-aop start
-17:15 c.beyond.board.common.AopLogService-Method명 :home
-17:15 c.beyond.board.common.AopLogService-HTTP 메서드GET
-17:15 c.beyond.board.common.AopLogService-aop end
-17:45 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
-17:45 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
-17:45 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+09:23 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7091a016, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14580edc, org.springframework.security.web.context.SecurityContextPersistenceFilter@1221d607, org.springframework.security.web.header.HeaderWriterFilter@775a5a67, org.springframework.security.web.authentication.logout.LogoutFilter@19542115, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@37a14aa1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c9aeec6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50aa9a91, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f2a7ca0, org.springframework.security.web.session.SessionManagementFilter@51eafec0, org.springframework.security.web.access.ExceptionTranslationFilter@68a97fc1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6efc9d3f]
+09:23 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:23 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+09:23 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+09:23 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+09:23 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+09:23 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+09:23 com.beyond.board.BoardApplication-Started BoardApplication in 1.892 seconds (JVM running for 2.123)
+09:23 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+09:23 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:23 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+09:23 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+09:23 c.beyond.board.common.AopLogService-aop start
+09:23 c.beyond.board.common.AopLogService-Method명 :home
+09:23 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:23 c.beyond.board.common.AopLogService-aop end
+09:23 c.beyond.board.common.AopLogService-aop start
+09:23 c.beyond.board.common.AopLogService-Method명 :error
+09:23 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:23 c.beyond.board.common.AopLogService-aop end
+09:24 c.beyond.board.common.AopLogService-aop start
+09:24 c.beyond.board.common.AopLogService-Method명 :errorHtml
+09:24 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:24 c.beyond.board.common.AopLogService-aop end
+09:24 c.beyond.board.common.AopLogService-aop start
+09:24 c.beyond.board.common.AopLogService-Method명 :home
+09:24 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:24 c.beyond.board.common.AopLogService-aop end
+09:24 c.beyond.board.common.AopLogService-aop start
+09:24 c.beyond.board.common.AopLogService-Method명 :errorHtml
+09:24 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:24 c.beyond.board.common.AopLogService-aop end
+09:24 c.beyond.board.common.AopLogService-aop start
+09:24 c.beyond.board.common.AopLogService-Method명 :home
+09:24 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:24 c.beyond.board.common.AopLogService-aop end
+09:25 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+09:25 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+09:25 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+09:25 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 47361 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+09:25 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+09:25 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:25 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+09:25 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+09:25 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+09:25 o.a.catalina.core.StandardService-Starting service [Tomcat]
+09:25 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+09:25 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+09:25 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 556 ms
+09:25 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+09:25 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+09:25 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+09:25 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+09:25 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:25 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+09:25 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:25 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:25 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: 372f2cca-9a84-4ed9-b8fe-8d5553b29d6c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+09:25 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6cfac0bd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@549debdb, org.springframework.security.web.context.SecurityContextPersistenceFilter@477e5b69, org.springframework.security.web.header.HeaderWriterFilter@6920fa35, org.springframework.security.web.authentication.logout.LogoutFilter@78805df3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7b38db21, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26c1f3eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68fa8ea5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1edf52e6, org.springframework.security.web.session.SessionManagementFilter@6dd1f239, org.springframework.security.web.access.ExceptionTranslationFilter@52a2e2fb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@469bd719]
+09:25 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:25 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+09:25 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+09:25 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+09:25 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+09:25 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+09:25 com.beyond.board.BoardApplication-Started BoardApplication in 1.817 seconds (JVM running for 2.045)
+09:25 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+09:25 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:25 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+09:25 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+09:25 c.beyond.board.common.AopLogService-aop start
+09:25 c.beyond.board.common.AopLogService-Method명 :home
+09:25 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:25 c.beyond.board.common.AopLogService-aop end
+09:25 c.beyond.board.common.AopLogService-aop start
+09:25 c.beyond.board.common.AopLogService-Method명 :createAuthor
+09:25 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:25 c.beyond.board.common.AopLogService-aop end
+09:33 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+09:33 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+09:33 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+09:33 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 51168 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+09:33 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+09:33 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:33 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+09:33 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+09:33 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+09:33 o.a.catalina.core.StandardService-Starting service [Tomcat]
+09:33 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+09:33 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+09:33 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 561 ms
+09:33 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+09:33 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+09:33 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+09:33 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+09:33 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:33 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+09:33 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:33 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:33 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: f2694145-4aa1-4a15-b093-993b816847f5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+09:33 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3113595e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@109188b4, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d957cf0, org.springframework.security.web.header.HeaderWriterFilter@6d57b264, org.springframework.security.web.authentication.logout.LogoutFilter@530e08a7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@84e43fb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ef7faa9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@400d1c30, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7091a016, org.springframework.security.web.session.SessionManagementFilter@23e3a27f, org.springframework.security.web.access.ExceptionTranslationFilter@69c51fdb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@374bf34b]
+09:33 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:33 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+09:33 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+09:33 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+09:33 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+09:33 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+09:33 com.beyond.board.BoardApplication-Started BoardApplication in 1.872 seconds (JVM running for 2.099)
+09:33 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+09:33 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:33 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+09:33 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+09:33 c.beyond.board.common.AopLogService-aop start
+09:33 c.beyond.board.common.AopLogService-Method명 :createAuthor
+09:33 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:33 c.beyond.board.common.AopLogService-aop end
+09:33 c.beyond.board.common.AopLogService-aop start
+09:33 c.beyond.board.common.AopLogService-Method명 :home
+09:33 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:33 c.beyond.board.common.AopLogService-aop end
+09:33 c.beyond.board.common.AopLogService-aop start
+09:33 c.beyond.board.common.AopLogService-Method명 :home
+09:33 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:33 c.beyond.board.common.AopLogService-aop end
+09:33 c.beyond.board.common.AopLogService-aop start
+09:33 c.beyond.board.common.AopLogService-Method명 :createAuthor
+09:33 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:33 c.beyond.board.common.AopLogService-aop end
+09:33 c.beyond.board.common.AopLogService-aop start
+09:33 c.beyond.board.common.AopLogService-Method명 :home
+09:33 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:33 c.beyond.board.common.AopLogService-aop end
+09:35 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+09:35 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+09:35 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+09:35 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 52363 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+09:35 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+09:35 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:35 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+09:35 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+09:35 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+09:35 o.a.catalina.core.StandardService-Starting service [Tomcat]
+09:35 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+09:35 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+09:35 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 596 ms
+09:35 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+09:35 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+09:35 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+09:35 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+09:35 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:35 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+09:35 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:35 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:35 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: 3211d252-ce72-4ef6-b704-eccd80a4117f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+09:35 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@84e43fb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4fea9f19, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b1895e, org.springframework.security.web.header.HeaderWriterFilter@71e89a26, org.springframework.security.web.authentication.logout.LogoutFilter@670aac24, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7ed5cc8c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8d52313, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d94279f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37a14aa1, org.springframework.security.web.session.SessionManagementFilter@66e434e8, org.springframework.security.web.access.ExceptionTranslationFilter@71806c64, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36ce0bc2]
+09:35 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:35 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+09:35 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+09:35 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+09:35 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+09:35 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+09:35 com.beyond.board.BoardApplication-Started BoardApplication in 1.937 seconds (JVM running for 2.256)
+09:35 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+09:35 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:35 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+09:35 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+09:35 c.beyond.board.common.AopLogService-aop start
+09:35 c.beyond.board.common.AopLogService-Method명 :home
+09:35 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:35 c.beyond.board.common.AopLogService-aop end
+09:36 c.beyond.board.common.AopLogService-aop start
+09:36 c.beyond.board.common.AopLogService-Method명 :errorHtml
+09:36 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:36 c.beyond.board.common.AopLogService-aop end
+09:37 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+09:37 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+09:37 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+09:37 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 53301 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+09:37 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+09:37 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:37 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+09:38 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+09:38 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+09:38 o.a.catalina.core.StandardService-Starting service [Tomcat]
+09:38 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+09:38 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+09:38 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 635 ms
+09:38 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+09:38 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+09:38 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+09:38 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+09:38 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:38 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+09:38 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:38 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:38 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: 38633796-90c2-4f36-ab79-48907710f476
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+09:38 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f2a7ca0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23e297d9, org.springframework.security.web.context.SecurityContextPersistenceFilter@3dc14f80, org.springframework.security.web.header.HeaderWriterFilter@8d52313, org.springframework.security.web.authentication.logout.LogoutFilter@1e4b70c6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@106f2425, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5bfdabf3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4efa7d2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e8e02a3, org.springframework.security.web.session.SessionManagementFilter@135a8808, org.springframework.security.web.access.ExceptionTranslationFilter@63053b71, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4172c967]
+09:38 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:38 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+09:38 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+09:38 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+09:38 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+09:38 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+09:38 com.beyond.board.BoardApplication-Started BoardApplication in 1.935 seconds (JVM running for 2.17)
+09:38 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+09:38 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:38 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+09:38 o.s.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+09:38 c.beyond.board.common.AopLogService-aop start
+09:38 c.beyond.board.common.AopLogService-Method명 :home
+09:38 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:38 c.beyond.board.common.AopLogService-aop end
+09:38 c.beyond.board.common.AopLogService-aop start
+09:38 c.beyond.board.common.AopLogService-Method명 :errorHtml
+09:38 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:38 c.beyond.board.common.AopLogService-aop end
+09:38 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+09:38 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+09:38 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+09:38 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 53476 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+09:38 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+09:38 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:38 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+09:38 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+09:38 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+09:38 o.a.catalina.core.StandardService-Starting service [Tomcat]
+09:38 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+09:38 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+09:38 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 531 ms
+09:38 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+09:38 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+09:38 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+09:38 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+09:38 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:38 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+09:38 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:38 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:38 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: d8a2264b-13b4-41c0-81ad-1f1478bd1274
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+09:38 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6cfac0bd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@549debdb, org.springframework.security.web.context.SecurityContextPersistenceFilter@477e5b69, org.springframework.security.web.header.HeaderWriterFilter@6920fa35, org.springframework.security.web.authentication.logout.LogoutFilter@78805df3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7b38db21, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26c1f3eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68fa8ea5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1edf52e6, org.springframework.security.web.session.SessionManagementFilter@6dd1f239, org.springframework.security.web.access.ExceptionTranslationFilter@52a2e2fb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@469bd719]
+09:38 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:38 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+09:38 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+09:38 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+09:38 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+09:38 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+09:38 com.beyond.board.BoardApplication-Started BoardApplication in 1.761 seconds (JVM running for 1.985)
+09:38 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+09:38 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:38 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+09:38 o.s.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+09:38 c.beyond.board.common.AopLogService-aop start
+09:38 c.beyond.board.common.AopLogService-Method명 :loginAuthorScreen
+09:38 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:38 c.beyond.board.common.AopLogService-aop end
+09:40 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+09:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+09:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+09:40 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 54491 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+09:40 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+09:40 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:40 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+09:40 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+09:40 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+09:40 o.a.catalina.core.StandardService-Starting service [Tomcat]
+09:40 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+09:40 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+09:40 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 572 ms
+09:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+09:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+09:40 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+09:40 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+09:40 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:40 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+09:40 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:40 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:40 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: 6b090b17-703b-427d-9cfe-3e2edcc4d08f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+09:40 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39b9dc35, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25da1dc9, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e58b0f6, org.springframework.security.web.header.HeaderWriterFilter@3606eee9, org.springframework.security.web.authentication.logout.LogoutFilter@7e0941cc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6778636f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7da6d695, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26c1f3eb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3976910, org.springframework.security.web.session.SessionManagementFilter@19542115, org.springframework.security.web.access.ExceptionTranslationFilter@4efa7d2f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35e3f3b8]
+09:40 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:40 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+09:40 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+09:40 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+09:40 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+09:40 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+09:40 com.beyond.board.BoardApplication-Started BoardApplication in 1.839 seconds (JVM running for 2.073)
+09:40 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+09:40 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:40 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+09:40 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+09:40 c.beyond.board.common.AopLogService-aop start
+09:40 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+09:40 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:40 c.beyond.board.common.AopLogService-aop end
+09:42 c.beyond.board.common.AopLogService-aop start
+09:42 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+09:42 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:42 c.beyond.board.common.AopLogService-aop end
+09:42 c.beyond.board.common.AopLogService-aop start
+09:42 c.beyond.board.common.AopLogService-Method명 :createAuthor
+09:42 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:42 c.beyond.board.common.AopLogService-aop end
+09:42 c.beyond.board.common.AopLogService-aop start
+09:42 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+09:42 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:42 c.beyond.board.common.AopLogService-aop end
+09:42 c.beyond.board.common.AopLogService-aop start
+09:42 c.beyond.board.common.AopLogService-Method명 :createAuthor
+09:42 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:42 c.beyond.board.common.AopLogService-aop end
+09:42 c.beyond.board.common.AopLogService-aop start
+09:42 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+09:42 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:42 c.beyond.board.common.AopLogService-aop end
+09:42 c.beyond.board.common.AopLogService-aop start
+09:42 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+09:42 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:42 c.beyond.board.common.AopLogService-aop end
+09:42 c.beyond.board.common.AopLogService-aop start
+09:42 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+09:42 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:42 c.beyond.board.common.AopLogService-aop end
+09:42 c.beyond.board.common.AopLogService-aop start
+09:42 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+09:42 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:42 c.beyond.board.common.AopLogService-aop end
+09:42 c.beyond.board.common.AopLogService-aop start
+09:42 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+09:42 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:42 c.beyond.board.common.AopLogService-aop end
+09:42 c.beyond.board.common.AopLogService-aop start
+09:42 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+09:42 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:42 c.beyond.board.common.AopLogService-aop end
+09:42 c.beyond.board.common.AopLogService-aop start
+09:42 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+09:42 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:42 c.beyond.board.common.AopLogService-aop end
+09:42 c.beyond.board.common.AopLogService-aop start
+09:42 c.beyond.board.common.AopLogService-Method명 :createAuthor
+09:42 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:42 c.beyond.board.common.AopLogService-aop end
+09:42 c.beyond.board.common.AopLogService-aop start
+09:42 c.beyond.board.common.AopLogService-Method명 :home
+09:42 c.beyond.board.common.AopLogService-HTTP 메서드GET
+09:42 c.beyond.board.common.AopLogService-aop end
+10:13 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+10:13 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+10:13 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+10:13 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 72419 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+10:13 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+10:13 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:13 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+10:13 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+10:13 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+10:13 o.a.catalina.core.StandardService-Starting service [Tomcat]
+10:13 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+10:13 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+10:13 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 632 ms
+10:13 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+10:13 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+10:13 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+10:13 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+10:13 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:13 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+10:13 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:13 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:13 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: 7782c726-7d74-4a91-bb75-e7ecc8c8e9a5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+10:13 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5ab06829, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6075a4ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@19542115, org.springframework.security.web.header.HeaderWriterFilter@7890fbf9, org.springframework.security.web.authentication.logout.LogoutFilter@5114c8a1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4be1c797, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28d97205, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79982bcc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b0d480c, org.springframework.security.web.session.SessionManagementFilter@628aea61, org.springframework.security.web.access.ExceptionTranslationFilter@2c9aeec6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1dc2c13c]
+10:13 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:13 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+10:13 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+10:13 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+10:13 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+10:13 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+10:13 com.beyond.board.BoardApplication-Started BoardApplication in 1.912 seconds (JVM running for 2.147)
+10:13 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+10:13 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:13 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+10:13 o.s.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+10:13 c.beyond.board.common.AopLogService-aop start
+10:13 c.beyond.board.common.AopLogService-Method명 :home
+10:13 c.beyond.board.common.AopLogService-HTTP 메서드GET
+10:13 c.beyond.board.common.AopLogService-aop end
+10:23 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+10:23 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+10:23 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+10:23 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 77448 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+10:23 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+10:23 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:23 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+10:23 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+10:23 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+10:23 o.a.catalina.core.StandardService-Starting service [Tomcat]
+10:23 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+10:23 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+10:23 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 558 ms
+10:23 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+10:23 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+10:23 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+10:23 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+10:23 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:23 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+10:23 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:23 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:23 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: 5a752b84-28e4-43dc-a63a-67f21c195bc9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+10:23 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@16f15a4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@548c5127, org.springframework.security.web.context.SecurityContextPersistenceFilter@811d8d6, org.springframework.security.web.header.HeaderWriterFilter@92de794, org.springframework.security.web.authentication.logout.LogoutFilter@e5f05f8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7891742e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e553d60, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5114c8a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35630ee8, org.springframework.security.web.session.SessionManagementFilter@11771fd6, org.springframework.security.web.access.ExceptionTranslationFilter@7054c068, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1edf52e6]
+10:23 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:23 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+10:23 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+10:23 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+10:23 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+10:23 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+10:23 com.beyond.board.BoardApplication-Started BoardApplication in 1.776 seconds (JVM running for 2.0)
+10:23 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+10:24 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:24 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+10:24 o.s.web.servlet.DispatcherServlet-Completed initialization in 3 ms
+10:24 c.beyond.board.common.AopLogService-aop start
+10:24 c.beyond.board.common.AopLogService-Method명 :home
+10:24 c.beyond.board.common.AopLogService-HTTP 메서드GET
+10:24 c.beyond.board.common.AopLogService-aop end
+10:24 c.beyond.board.common.AopLogService-aop start
+10:24 c.beyond.board.common.AopLogService-Method명 :createAuthor
+10:24 c.beyond.board.common.AopLogService-HTTP 메서드GET
+10:24 c.beyond.board.common.AopLogService-aop end
+10:24 c.beyond.board.common.AopLogService-aop start
+10:24 c.beyond.board.common.AopLogService-Method명 :createAuthor
+10:24 c.beyond.board.common.AopLogService-HTTP 메서드POST
+10:24 c.beyond.board.common.AopLogService-aop end
+10:24 c.beyond.board.common.AopLogService-aop start
+10:24 c.beyond.board.common.AopLogService-Method명 :home
+10:24 c.beyond.board.common.AopLogService-HTTP 메서드GET
+10:24 c.beyond.board.common.AopLogService-aop end
+10:24 c.beyond.board.common.AopLogService-aop start
+10:24 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+10:24 c.beyond.board.common.AopLogService-HTTP 메서드GET
+10:24 c.beyond.board.common.AopLogService-aop end
