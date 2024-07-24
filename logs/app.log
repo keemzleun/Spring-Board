@@ -1525,3 +1525,648 @@ java.lang.IllegalArgumentException: 본인의 게시글이 아닙니다
 12:50 c.beyond.board.common.AopLogService-aop end
 13:17 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m8s229ms).
 13:27 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m55s879ms).
+13:59 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m39s615ms).
+14:05 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+14:05 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+14:05 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+14:05 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 66749 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+14:05 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+14:05 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:05 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+14:05 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+14:05 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+14:05 o.a.catalina.core.StandardService-Starting service [Tomcat]
+14:05 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+14:05 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+14:05 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 559 ms
+14:05 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+14:05 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+14:05 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+14:05 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+14:05 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:05 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+14:05 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:05 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:05 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@294a3f2a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e466fdf, org.springframework.security.web.context.SecurityContextPersistenceFilter@4353db40, org.springframework.security.web.header.HeaderWriterFilter@73dd3a46, org.springframework.security.web.authentication.logout.LogoutFilter@17344d7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7f6a6d46, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@775a5a67, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70869678, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@84e43fb, org.springframework.security.web.session.SessionManagementFilter@54eb2bf6, org.springframework.security.web.access.ExceptionTranslationFilter@3b399f5a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e5f05f8]
+14:05 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:05 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+14:05 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+14:05 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+14:05 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+14:05 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+14:05 com.beyond.board.BoardApplication-Started BoardApplication in 1.816 seconds (JVM running for 2.055)
+14:05 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+14:05 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:05 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+14:05 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+14:05 c.beyond.board.common.AopLogService-aop start
+14:05 c.beyond.board.common.AopLogService-Method명 :home
+14:05 c.beyond.board.common.AopLogService-HTTP 메서드GET
+14:05 c.beyond.board.common.AopLogService-aop end
+14:05 c.beyond.board.common.AopLogService-aop start
+14:05 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+14:05 c.beyond.board.common.AopLogService-HTTP 메서드GET
+14:05 c.beyond.board.common.AopLogService-aop end
+14:05 c.beyond.board.common.AopLogService-aop start
+14:05 c.beyond.board.common.AopLogService-Method명 :createAuthor
+14:05 c.beyond.board.common.AopLogService-HTTP 메서드GET
+14:05 c.beyond.board.common.AopLogService-aop end
+14:06 c.beyond.board.common.AopLogService-aop start
+14:06 c.beyond.board.common.AopLogService-Method명 :createAuthor
+14:06 c.beyond.board.common.AopLogService-HTTP 메서드POST
+14:06 c.beyond.board.common.AopLogService-aop end
+14:06 c.beyond.board.common.AopLogService-aop start
+14:06 c.beyond.board.common.AopLogService-Method명 :home
+14:06 c.beyond.board.common.AopLogService-HTTP 메서드GET
+14:06 c.beyond.board.common.AopLogService-aop end
+14:06 c.beyond.board.common.AopLogService-aop start
+14:06 c.beyond.board.common.AopLogService-Method명 :createAuthor
+14:06 c.beyond.board.common.AopLogService-HTTP 메서드GET
+14:06 c.beyond.board.common.AopLogService-aop end
+14:06 c.beyond.board.common.AopLogService-aop start
+14:06 c.beyond.board.common.AopLogService-Method명 :createAuthor
+14:06 c.beyond.board.common.AopLogService-HTTP 메서드POST
+14:06 c.beyond.board.common.AopLogService-aop end
+14:06 c.beyond.board.common.AopLogService-aop start
+14:06 c.beyond.board.common.AopLogService-Method명 :home
+14:06 c.beyond.board.common.AopLogService-HTTP 메서드GET
+14:06 c.beyond.board.common.AopLogService-aop end
+14:06 c.beyond.board.common.AopLogService-aop start
+14:06 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+14:06 c.beyond.board.common.AopLogService-HTTP 메서드GET
+14:06 c.beyond.board.common.AopLogService-aop end
+14:06 c.beyond.board.common.AopLogService-aop start
+14:06 c.beyond.board.common.AopLogService-Method명 :home
+14:06 c.beyond.board.common.AopLogService-HTTP 메서드GET
+14:06 c.beyond.board.common.AopLogService-aop end
+14:06 c.beyond.board.common.AopLogService-aop start
+14:06 c.beyond.board.common.AopLogService-Method명 :authorList
+14:06 c.beyond.board.common.AopLogService-HTTP 메서드GET
+14:06 c.beyond.board.common.AopLogService-aop end
+14:06 c.beyond.board.common.AopLogService-aop start
+14:06 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+14:06 c.beyond.board.common.AopLogService-HTTP 메서드GET
+14:06 c.beyond.board.common.AopLogService-aop end
+14:06 c.beyond.board.common.AopLogService-aop start
+14:06 c.beyond.board.common.AopLogService-Method명 :home
+14:06 c.beyond.board.common.AopLogService-HTTP 메서드GET
+14:06 c.beyond.board.common.AopLogService-aop end
+14:06 c.beyond.board.common.AopLogService-aop start
+14:06 c.beyond.board.common.AopLogService-Method명 :postList
+14:06 c.beyond.board.common.AopLogService-HTTP 메서드GET
+14:06 c.beyond.board.common.AopLogService-aop end
+14:07 c.beyond.board.common.AopLogService-aop start
+14:07 c.beyond.board.common.AopLogService-Method명 :home
+14:07 c.beyond.board.common.AopLogService-HTTP 메서드GET
+14:07 c.beyond.board.common.AopLogService-aop end
+14:07 c.beyond.board.common.AopLogService-aop start
+14:07 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+14:07 c.beyond.board.common.AopLogService-HTTP 메서드GET
+14:07 c.beyond.board.common.AopLogService-aop end
+14:07 c.beyond.board.common.AopLogService-aop start
+14:07 c.beyond.board.common.AopLogService-Method명 :home
+14:07 c.beyond.board.common.AopLogService-HTTP 메서드GET
+14:07 c.beyond.board.common.AopLogService-aop end
+16:04 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+16:04 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+16:04 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+16:04 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 24266 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+16:04 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:04 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:04 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:04 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+16:04 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:04 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:04 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:04 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:04 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+16:04 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+16:04 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+16:04 o.a.catalina.core.StandardService-Starting service [Tomcat]
+16:04 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:04 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+16:04 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 627 ms
+16:04 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+16:04 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:address=(host=localhost)(port=3306)(type=primary). Connection refused (Connection refused)
+	at org.mariadb.jdbc.client.impl.ConnectionHelper.connectSocket(ConnectionHelper.java:136)
+	at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:103)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:70)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:101)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:27)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337)
+	at org.springframework.boot.jdbc.DatabaseDriver.fromDataSource(DatabaseDriver.java:335)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.getDatabaseDriver(PlatformPlaceholderDatabaseDriverResolver.java:137)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.determinePlatform(PlatformPlaceholderDatabaseDriverResolver.java:131)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.lambda$resolveAll$0(PlatformPlaceholderDatabaseDriverResolver.java:96)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.resolveAll(PlatformPlaceholderDatabaseDriverResolver.java:121)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.resolveAll(PlatformPlaceholderDatabaseDriverResolver.java:96)
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.resolveSchemaLocations(BatchDataSourceScriptDatabaseInitializer.java:86)
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.getSettings(BatchDataSourceScriptDatabaseInitializer.java:73)
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.<init>(BatchDataSourceScriptDatabaseInitializer.java:48)
+	at org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$DataSourceInitializerConfiguration.batchDataSourceInitializer(BatchAutoConfiguration.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:910)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.beyond.board.BoardApplication.main(BoardApplication.java:16)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.mariadb.jdbc.client.impl.ConnectionHelper.connectSocket(ConnectionHelper.java:130)
+	... 52 common frames omitted
+16:04 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'batchDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/batch/BatchAutoConfiguration$DataSourceInitializerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer]: Factory method 'batchDataSourceInitializer' threw exception; nested exception is java.lang.IllegalStateException: Unable to detect database type
+16:04 o.a.catalina.core.StandardService-Stopping service [Tomcat]
+16:04 o.s.b.a.l.ConditionEvaluationReportLoggingListener-
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:04 o.s.boot.SpringApplication-Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'batchDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/batch/BatchAutoConfiguration$DataSourceInitializerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer]: Factory method 'batchDataSourceInitializer' threw exception; nested exception is java.lang.IllegalStateException: Unable to detect database type
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:910)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.beyond.board.BoardApplication.main(BoardApplication.java:16)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer]: Factory method 'batchDataSourceInitializer' threw exception; nested exception is java.lang.IllegalStateException: Unable to detect database type
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 21 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to detect database type
+	at org.springframework.util.Assert.state(Assert.java:76)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.determinePlatform(PlatformPlaceholderDatabaseDriverResolver.java:132)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.lambda$resolveAll$0(PlatformPlaceholderDatabaseDriverResolver.java:96)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.resolveAll(PlatformPlaceholderDatabaseDriverResolver.java:121)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.resolveAll(PlatformPlaceholderDatabaseDriverResolver.java:96)
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.resolveSchemaLocations(BatchDataSourceScriptDatabaseInitializer.java:86)
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.getSettings(BatchDataSourceScriptDatabaseInitializer.java:73)
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.<init>(BatchDataSourceScriptDatabaseInitializer.java:48)
+	at org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$DataSourceInitializerConfiguration.batchDataSourceInitializer(BatchAutoConfiguration.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 22 common frames omitted
+16:06 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 25040 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+16:06 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:06 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:06 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:06 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+16:06 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:06 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:06 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:06 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:06 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+16:06 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+16:06 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+16:06 o.a.catalina.core.StandardService-Starting service [Tomcat]
+16:06 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:06 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+16:06 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 626 ms
+16:06 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+16:06 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:address=(host=localhost)(port=3306)(type=primary). Connection refused (Connection refused)
+	at org.mariadb.jdbc.client.impl.ConnectionHelper.connectSocket(ConnectionHelper.java:136)
+	at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:103)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:70)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:101)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:27)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337)
+	at org.springframework.boot.jdbc.DatabaseDriver.fromDataSource(DatabaseDriver.java:335)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.getDatabaseDriver(PlatformPlaceholderDatabaseDriverResolver.java:137)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.determinePlatform(PlatformPlaceholderDatabaseDriverResolver.java:131)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.lambda$resolveAll$0(PlatformPlaceholderDatabaseDriverResolver.java:96)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.resolveAll(PlatformPlaceholderDatabaseDriverResolver.java:121)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.resolveAll(PlatformPlaceholderDatabaseDriverResolver.java:96)
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.resolveSchemaLocations(BatchDataSourceScriptDatabaseInitializer.java:86)
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.getSettings(BatchDataSourceScriptDatabaseInitializer.java:73)
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.<init>(BatchDataSourceScriptDatabaseInitializer.java:48)
+	at org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$DataSourceInitializerConfiguration.batchDataSourceInitializer(BatchAutoConfiguration.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:910)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.beyond.board.BoardApplication.main(BoardApplication.java:16)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.mariadb.jdbc.client.impl.ConnectionHelper.connectSocket(ConnectionHelper.java:130)
+	... 52 common frames omitted
+16:06 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'batchDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/batch/BatchAutoConfiguration$DataSourceInitializerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer]: Factory method 'batchDataSourceInitializer' threw exception; nested exception is java.lang.IllegalStateException: Unable to detect database type
+16:06 o.a.catalina.core.StandardService-Stopping service [Tomcat]
+16:06 o.s.b.a.l.ConditionEvaluationReportLoggingListener-
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:06 o.s.boot.SpringApplication-Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'batchDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/batch/BatchAutoConfiguration$DataSourceInitializerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer]: Factory method 'batchDataSourceInitializer' threw exception; nested exception is java.lang.IllegalStateException: Unable to detect database type
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:910)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.beyond.board.BoardApplication.main(BoardApplication.java:16)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer]: Factory method 'batchDataSourceInitializer' threw exception; nested exception is java.lang.IllegalStateException: Unable to detect database type
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 21 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to detect database type
+	at org.springframework.util.Assert.state(Assert.java:76)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.determinePlatform(PlatformPlaceholderDatabaseDriverResolver.java:132)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.lambda$resolveAll$0(PlatformPlaceholderDatabaseDriverResolver.java:96)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.resolveAll(PlatformPlaceholderDatabaseDriverResolver.java:121)
+	at org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver.resolveAll(PlatformPlaceholderDatabaseDriverResolver.java:96)
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.resolveSchemaLocations(BatchDataSourceScriptDatabaseInitializer.java:86)
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.getSettings(BatchDataSourceScriptDatabaseInitializer.java:73)
+	at org.springframework.boot.autoconfigure.batch.BatchDataSourceScriptDatabaseInitializer.<init>(BatchDataSourceScriptDatabaseInitializer.java:48)
+	at org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$DataSourceInitializerConfiguration.batchDataSourceInitializer(BatchAutoConfiguration.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 22 common frames omitted
+16:08 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 25888 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+16:08 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:08 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:08 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:08 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+16:08 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:08 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:08 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:08 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:08 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+16:08 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+16:08 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+16:08 o.a.catalina.core.StandardService-Starting service [Tomcat]
+16:08 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:08 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+16:08 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 635 ms
+16:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+16:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+16:08 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+16:08 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+16:08 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:08 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+16:08 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:08 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:08 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8bb5c2a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a9d572, org.springframework.security.web.context.SecurityContextPersistenceFilter@e75bae7, org.springframework.security.web.header.HeaderWriterFilter@2a738d47, org.springframework.security.web.authentication.logout.LogoutFilter@20dc763b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@524b1e41, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44ba9f25, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4767be27, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a5df98c, org.springframework.security.web.session.SessionManagementFilter@6c120b00, org.springframework.security.web.access.ExceptionTranslationFilter@6fc3f1a7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46ae897c]
+16:08 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:08 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+16:08 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+16:08 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+16:08 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+16:08 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+16:08 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+16:08 com.beyond.board.BoardApplication-Started BoardApplication in 2.233 seconds (JVM running for 2.518)
+16:08 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+16:10 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:10 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+16:10 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+16:10 c.beyond.board.common.AopLogService-aop start
+16:10 c.beyond.board.common.AopLogService-Method명 :home
+16:10 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:10 c.beyond.board.common.AopLogService-aop end
+16:10 c.beyond.board.common.AopLogService-aop start
+16:10 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+16:10 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:10 c.beyond.board.common.AopLogService-aop end
+16:10 c.beyond.board.common.AopLogService-aop start
+16:10 c.beyond.board.common.AopLogService-Method명 :home
+16:10 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:10 c.beyond.board.common.AopLogService-aop end
+16:15 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+16:15 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+16:15 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+16:15 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 29214 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+16:15 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:15 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:15 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:15 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+16:15 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:15 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:15 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:15 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:15 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+16:15 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+16:15 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+16:15 o.a.catalina.core.StandardService-Starting service [Tomcat]
+16:15 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:15 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+16:15 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 606 ms
+16:15 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+16:15 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+16:15 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+16:15 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+16:15 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:15 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+16:15 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:15 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:15 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@202ba60a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12ebcdf6, org.springframework.security.web.context.SecurityContextPersistenceFilter@44ba9f25, org.springframework.security.web.header.HeaderWriterFilter@6c120b00, org.springframework.security.web.authentication.logout.LogoutFilter@294b045b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@735b1ad2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46f041cb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@642b71d6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30dd23e2, org.springframework.security.web.session.SessionManagementFilter@7bf2e475, org.springframework.security.web.access.ExceptionTranslationFilter@30ce78e3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@22b4ad0c]
+16:15 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:15 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+16:15 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+16:15 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+16:15 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+16:15 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+16:15 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+16:15 com.beyond.board.BoardApplication-Started BoardApplication in 2.183 seconds (JVM running for 2.434)
+16:15 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+16:15 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:15 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+16:15 o.s.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+16:15 c.beyond.board.common.AopLogService-aop start
+16:15 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+16:15 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:15 c.beyond.board.common.AopLogService-aop end
+16:15 c.beyond.board.common.AopLogService-aop start
+16:15 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+16:15 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:15 c.beyond.board.common.AopLogService-aop end
+16:15 c.beyond.board.common.AopLogService-aop start
+16:15 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+16:15 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:15 c.beyond.board.common.AopLogService-aop end
+16:15 c.beyond.board.common.AopLogService-aop start
+16:15 c.beyond.board.common.AopLogService-Method명 :home
+16:15 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:15 c.beyond.board.common.AopLogService-aop end
+16:16 c.beyond.board.common.AopLogService-aop start
+16:16 c.beyond.board.common.AopLogService-Method명 :home
+16:16 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:16 c.beyond.board.common.AopLogService-aop end
+16:16 c.beyond.board.common.AopLogService-aop start
+16:16 c.beyond.board.common.AopLogService-Method명 :postList
+16:16 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:16 c.beyond.board.common.AopLogService-aop end
+16:17 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+16:17 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+16:17 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+16:17 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 30393 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+16:17 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:17 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:17 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:17 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+16:17 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:17 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:17 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:17 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:17 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+16:17 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+16:17 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+16:17 o.a.catalina.core.StandardService-Starting service [Tomcat]
+16:17 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:17 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+16:17 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 610 ms
+16:17 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+16:17 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+16:17 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+16:17 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+16:17 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:17 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+16:17 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:17 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:17 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3d0697da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b99f2ed, org.springframework.security.web.context.SecurityContextPersistenceFilter@74130456, org.springframework.security.web.header.HeaderWriterFilter@54da736e, org.springframework.security.web.authentication.logout.LogoutFilter@1067bc4c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@55589ef5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21e15093, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ced1d14, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@723081a2, org.springframework.security.web.session.SessionManagementFilter@33cec966, org.springframework.security.web.access.ExceptionTranslationFilter@7e916dc2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12ebcdf6]
+16:17 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:17 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+16:17 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+16:17 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+16:17 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+16:17 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+16:17 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+16:17 com.beyond.board.BoardApplication-Started BoardApplication in 2.178 seconds (JVM running for 2.441)
+16:17 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+16:17 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:17 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+16:17 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+16:17 c.beyond.board.common.AopLogService-aop start
+16:17 c.beyond.board.common.AopLogService-Method명 :postList
+16:17 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:17 c.beyond.board.common.AopLogService-aop end
+16:17 c.beyond.board.common.AopLogService-aop start
+16:17 c.beyond.board.common.AopLogService-Method명 :postList
+16:17 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:17 c.beyond.board.common.AopLogService-aop end
+16:17 c.beyond.board.common.AopLogService-aop start
+16:17 c.beyond.board.common.AopLogService-Method명 :home
+16:17 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:17 c.beyond.board.common.AopLogService-aop end
+16:17 c.beyond.board.common.AopLogService-aop start
+16:17 c.beyond.board.common.AopLogService-Method명 :postList
+16:17 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:17 c.beyond.board.common.AopLogService-aop end
+16:18 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+16:18 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+16:18 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+16:18 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 30992 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+16:18 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:18 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:18 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:18 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+16:18 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:18 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:18 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:18 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:18 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+16:18 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+16:18 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+16:18 o.a.catalina.core.StandardService-Starting service [Tomcat]
+16:18 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:18 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+16:18 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 594 ms
+16:18 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+16:18 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+16:18 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+16:18 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+16:18 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:18 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+16:18 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:18 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:18 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3d0697da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b99f2ed, org.springframework.security.web.context.SecurityContextPersistenceFilter@74130456, org.springframework.security.web.header.HeaderWriterFilter@54da736e, org.springframework.security.web.authentication.logout.LogoutFilter@1067bc4c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@55589ef5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21e15093, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ced1d14, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@723081a2, org.springframework.security.web.session.SessionManagementFilter@33cec966, org.springframework.security.web.access.ExceptionTranslationFilter@7e916dc2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12ebcdf6]
+16:18 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:18 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+16:18 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+16:18 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+16:18 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+16:18 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+16:18 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+16:18 com.beyond.board.BoardApplication-Started BoardApplication in 2.141 seconds (JVM running for 2.379)
+16:18 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+16:18 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:18 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+16:18 o.s.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+16:18 c.beyond.board.common.AopLogService-aop start
+16:18 c.beyond.board.common.AopLogService-Method명 :postList
+16:18 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:18 c.beyond.board.common.AopLogService-aop end
+16:18 c.beyond.board.common.AopLogService-aop start
+16:18 c.beyond.board.common.AopLogService-Method명 :home
+16:18 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:18 c.beyond.board.common.AopLogService-aop end
+16:18 c.beyond.board.common.AopLogService-aop start
+16:18 c.beyond.board.common.AopLogService-Method명 :postList
+16:18 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:18 c.beyond.board.common.AopLogService-aop end
+16:18 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+16:18 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+16:18 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+16:18 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.23 on keemzleunui-MacBookPro.local with PID 31083 (/Users/keemzleun/study/board/build/classes/java/main started by keemzleun in /Users/keemzleun/study/board)
+16:18 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:18 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:18 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:18 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+16:18 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:18 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:18 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:18 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:18 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+16:18 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+16:18 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+16:18 o.a.catalina.core.StandardService-Starting service [Tomcat]
+16:18 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:18 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+16:18 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 618 ms
+16:18 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+16:18 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+16:18 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+16:18 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+16:18 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:18 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+16:18 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:18 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:18 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3d0697da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b99f2ed, org.springframework.security.web.context.SecurityContextPersistenceFilter@74130456, org.springframework.security.web.header.HeaderWriterFilter@54da736e, org.springframework.security.web.authentication.logout.LogoutFilter@1067bc4c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@55589ef5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21e15093, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ced1d14, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@723081a2, org.springframework.security.web.session.SessionManagementFilter@33cec966, org.springframework.security.web.access.ExceptionTranslationFilter@7e916dc2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12ebcdf6]
+16:19 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:19 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+16:19 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+16:19 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+16:19 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+16:19 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+16:19 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+16:19 com.beyond.board.BoardApplication-Started BoardApplication in 2.193 seconds (JVM running for 2.459)
+16:19 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+16:19 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:19 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+16:19 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+16:19 c.beyond.board.common.AopLogService-aop start
+16:19 c.beyond.board.common.AopLogService-Method명 :home
+16:19 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:19 c.beyond.board.common.AopLogService-aop end
+16:19 c.beyond.board.common.AopLogService-aop start
+16:19 c.beyond.board.common.AopLogService-Method명 :postList
+16:19 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:19 c.beyond.board.common.AopLogService-aop end
+16:34 c.beyond.board.common.AopLogService-aop start
+16:34 c.beyond.board.common.AopLogService-Method명 :authorLoginScreen
+16:34 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:34 c.beyond.board.common.AopLogService-aop end
+16:35 c.beyond.board.common.AopLogService-aop start
+16:35 c.beyond.board.common.AopLogService-Method명 :home
+16:35 c.beyond.board.common.AopLogService-HTTP 메서드GET
+16:35 c.beyond.board.common.AopLogService-aop end
+17:38 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+17:38 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+17:38 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
