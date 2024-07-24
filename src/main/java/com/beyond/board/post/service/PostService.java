@@ -6,11 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityNotFoundException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import com.beyond.board.post.dto.PostUpdateDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import com.beyond.board.author.domain.Author;
@@ -45,7 +48,9 @@ public class PostService {
 		// Author author = authorRepository.findByEmail(dto.getEmail())
 		// 	.orElseThrow(() -> new EntityNotFoundException("author not found"));
 
-		Author author = authorService.authorFindByEmail(dto.getEmail());
+		String email = SecurityContextHolder.getContext().getAuthentication().getName();
+		Author author = authorService.authorFindByEmail(email);
+
 		String appointment = null;
 		LocalDateTime appointmentTime = null;
 
@@ -93,13 +98,23 @@ public class PostService {
 	// 삭제
 	@Transactional
 	public void delete(Long id){
-		postRepository.deleteById(id);
+
+		String email = SecurityContextHolder.getContext().getAuthentication().getName();
+		Post post = postRepository.findById(id).orElseThrow(()-> new EntityNotFoundException("post id not found"));
+		if(post.getAuthor().getEmail().equals(email)){
+			throw new IllegalArgumentException("본인의 게시글이 아닙니다");
+		}
+		postRepository.delete(post);
 	}
 
 	// 수정
 	@Transactional
 	public Post update(Long id, PostUpdateDto dto){
+		String email = SecurityContextHolder.getContext().getAuthentication().getName();
 		Post post = postRepository.findById(id).orElseThrow(()-> new EntityNotFoundException("없는 id입니다"));
+		if(!post.getAuthor().getEmail().equals(email)){
+			throw new IllegalArgumentException("본인의 게시글이 아닙니다");
+		}
 		post.updatePost(dto);
 		return postRepository.save(post);
 	}

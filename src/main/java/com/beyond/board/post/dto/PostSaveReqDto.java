@@ -19,7 +19,7 @@ public class PostSaveReqDto {
 	private String title;
 	private String contents;
 
-	private String email;	// 추후 로그인 기능 이후에는 없어질 dto
+//	private String email;	// 추후 로그인 기능 이후에는 없어질 dto
 
 	private String appointment;
 	private String appointmentTime;
